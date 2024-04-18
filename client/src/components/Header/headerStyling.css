@@ -1,22 +1,62 @@
-body {
-    margin: 0;
-}
+/* ---------------- NAVBAR STYLING ------------------------ */
 
+/* Whole header section */
 .main_navbar_div {
     height: 100vh;
     background-color: #222831;
 }
 
-.circular_div {
+/* Top section */
+.main_navbar_component {
     color: #EEEEEE;
-    gap: 2rem;
     margin-left: 14rem; /* 384px */
     margin-right: 14rem; /* 384px */
     padding-top: 1rem;
     display: flex;
+    justify-content: center;
 }
 
+/* Div of the image */
+.img_div {
+    margin-right: 10rem;
+    position: absolute;
+    width: 50rem;
+}
+
+/* Image styling */
 .img_navbar {
     border-radius: 50%;
     height: 3.5rem;
+}
+
+/* Div of the circular navigation area */
+.circular_component {
+    border-radius: 30px;
+    border-color: white;
+    border: 2px solid;
+}
+
+/* Content inside the circular compoonent */
+.content_navbar {
+    /* If I don't put position, the a tags will not work */
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    list-style-type: none;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.night_mode_div {
+    margin-right: -100rem;
+    position: absolute;
+    width: 50rem;
+}
+
+.night_icon {
+    border-radius: 50%;
+    height: 3.5rem;
+    
 }
