@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.main_navbar_div {
+    height: 100vh;
+    background-color: #222831;
+}
+
+.circular_div {
+    color: #EEEEEE;
+    gap: 2rem;
+    margin-left: 14rem; /* 384px */
+    margin-right: 14rem; /* 384px */
+    padding-top: 1rem;
+    display: flex;
+}
+
+.img_navbar {
+    border-radius: 50%;
+    height: 3.5rem;
+}
