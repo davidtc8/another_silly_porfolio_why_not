@@ -20,7 +20,7 @@
 .img_div {
     margin-right: 10rem;
     position: absolute;
-    width: 50rem;
+    margin-left: -40rem;
 }
 
 /* Image styling */
@@ -49,6 +49,7 @@
     margin-bottom: .5rem;
 }
 
+/* Night mode icon styling */
 .night_mode_div {
     margin-right: -100rem;
     position: absolute;
@@ -58,5 +59,9 @@
 .night_icon {
     border-radius: 50%;
     height: 3.5rem;
+}
+
+/* Welcome Section */
+.welcome_section {
     
 }
