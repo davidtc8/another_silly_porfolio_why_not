@@ -10,7 +10,9 @@ export default function Header() {
         {/* Start Creating the circular div inside the image */}
         <div className="main_navbar_component">
           <div className='img_div'>
-            <img src={image} alt="" className='img_navbar'/>
+            <a href="home">
+              <img src={image} alt="" className='img_navbar' href="home"/>
+            </a>
           </div>
           <div className='circular_component'>
             <div className='content_navbar'>
@@ -28,6 +30,11 @@ export default function Header() {
           <div className='night_mode_div'>
             <FiMoon className='night_icon' size={30}>
             </FiMoon>
+          </div>
+        </div>
+        <div className='welcome_section'>
+          <div className='welcome_letters_section'>
+            <h1>Hey there!</h1>
           </div>
         </div>
       </div>
