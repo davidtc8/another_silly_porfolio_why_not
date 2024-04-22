@@ -34,7 +34,24 @@ export default function Header() {
         </div>
         <div className='welcome_section'>
           <div className='welcome_letters_section'>
-            <h1>Hey there!</h1>
+            <span className='hey_there_welcome_section text-5xl p-4 text-center font-bold from-cyan-400 via-cyan-600 to-sky-200 bg-gradient-to-r bg-clip-text text-transparent'>
+              Hey there, I'm
+            <br />
+            <span className='name_welcome_section text-5xl p-4 text-center font-bold from-cyan-400 via-cyan-600 to-sky-200 bg-gradient-to-r bg-clip-text text-transparent'>
+              David Torres!
+              <span className='icon_robot'> 🤖 </span>
+            </span> 
+            <br />
+            </span>
+            <br />
+            <span className='about_me_welcome_section font-normal'>
+              <p className='first_about_me_p'>
+                Software Engineer and tech enthusiast based in Monterrey, Mexico 🇲🇽
+              </p>
+              <p>
+                Welcome to this blog/portfolio/site where you'll be able to see the latest work I'm working on.
+              </p> 
+            </span>
           </div>
         </div>
       </div>

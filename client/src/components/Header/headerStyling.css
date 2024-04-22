@@ -63,5 +63,33 @@
 
 /* Welcome Section */
 .welcome_section {
-    
+    color: #EEEEEE;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    width: 28rem;
+    padding: 0 !important;
+}
+
+.hey_there_welcome_section {
+    padding: 0 !important;
+}
+
+.name_welcome_section {
+    position: absolute;
+    margin-top: 1rem;
+    padding: 0 !important;
+}
+
+.icon_robot {
+    color: black;
+    margin-left: .5rem;
+}
+
+.about_me_welcome_section {
+    position: absolute;
+    margin-top: 1rem;
+}
+
+.first_about_me_p {
+    margin-bottom: .5rem;
 }
