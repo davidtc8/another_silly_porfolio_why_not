@@ -1,11 +1,11 @@
 import Header from './components/Header/Header'
-import AnotherSection from './components/AnotherSection/Another'
+import Experience from './components/Experience/Experience'
 
 function App() {
   return (
     <>
       <Header />
-      <AnotherSection />
+      <Experience />
     </>
   )
 }
