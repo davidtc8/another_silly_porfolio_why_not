@@ -1,22 +1,211 @@
-body {
-    margin: 0;
-}
+/* ---------------- NAVBAR STYLING ------------------------ */
 
+/* Whole header section */
 .main_navbar_div {
     height: 100vh;
     background-color: #222831;
 }
 
-.circular_div {
+/* Top section */
+.main_navbar_component {
     color: #EEEEEE;
-    gap: 2rem;
     margin-left: 14rem; /* 384px */
     margin-right: 14rem; /* 384px */
     padding-top: 1rem;
     display: flex;
+    justify-content: center;
 }
 
+/* Div of the image */
+.img_div {
+    margin-right: 10rem;
+    position: absolute;
+    margin-left: -40rem;
+}
+
+/* Image styling */
 .img_navbar {
     border-radius: 50%;
     height: 3.5rem;
 }
+
+/* Div of the circular navigation area */
+.circular_component {
+    border-radius: 30px;
+    border-color: white;
+    border: 2px solid;
+}
+
+/* Content inside the circular compoonent */
+.content_navbar {
+    /* If I don't put position, the a tags will not work */
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    list-style-type: none;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/* Night mode icon styling */
+.night_mode_div {
+    margin-right: -100rem;
+    position: absolute;
+    width: 50rem;
+}
+
+.night_icon {
+    border-radius: 50%;
+    height: 3.5rem;
+}
+
+/* Welcome Section */
+.welcome_section {
+    width: 50%;
+    margin: auto 50% auto auto;
+    color: #EEEEEE;
+    width: 28rem;
+    padding-top: 10rem;
+}
+
+.hey_there_welcome_section {
+    padding: 0 !important;
+}
+
+.name_welcome_section {
+    position: absolute;
+    margin-top: 1rem;
+    padding: 0 !important;
+}
+
+.icon_robot {
+    color: black;
+    margin-left: .5rem;
+}
+
+.about_me_welcome_section {
+    position: absolute;
+    margin-top: 1rem;
+}
+
+.first_about_me_p {
+    margin-bottom: .5rem;
+}
+
+.my_journey_button {
+    margin-top: 6rem;
+}
+
+
+/* Animation container */
+@-webkit-keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 29%;
+      }
+      15% {
+      opacity: 1;
+      top: 50%;
+      }
+      50% {
+      opacity: 0;
+      top: 50%;
+      }
+      100% {
+      opacity: 0;
+      top: 29%;
+      }
+}
+@-moz-keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 29%;
+      }
+      15% {
+      opacity: 1;
+      top: 50%;
+      }
+      50% {
+      opacity: 0;
+      top: 50%;
+      }
+      100% {
+      opacity: 0;
+      top: 29%;
+      }
+}
+@keyframes ani-mouse {
+      0% {
+      opacity: 1;
+      top: 29%;
+      }
+      15% {
+      opacity: 1;
+      top: 50%;
+      }
+      50% {
+      opacity: 0;
+      top: 50%;
+      }
+      100% {
+      opacity: 0;
+      top: 29%;
+      }
+}
+.scroll-btn {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin-top: 10rem;
+}
+  .scroll-btn > * {
+      line-height: 18px;
+      font-size: 13px;
+      font-weight: normal;
+      color: #7f8c8d;
+      color: #ffffff;
+      font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 2px;
+}
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *.active {
+      color: #ffffff;
+}
+  .scroll-btn > *:hover,
+  .scroll-btn > *:focus,
+  .scroll-btn > *:active,
+  .scroll-btn > *.active {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+      position: relative;
+      display: block;
+      width: 35px;
+      height: 55px;
+      margin: 0 auto 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 3px solid white;
+      border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+      position: absolute;
+      display: block;
+      top: 29%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      background: white;
+      border-radius: 50%;
+      -webkit-animation: ani-mouse 2.5s linear infinite;
+      -moz-animation: ani-mouse 2.5s linear infinite;
+      animation: ani-mouse 2.5s linear infinite;
+}  
