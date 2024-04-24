@@ -1,0 +1,66 @@
+.main_div_experience_section {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+.experience_h1 {
+    text-align: center;
+}
+
+.parent_section {
+    padding-top: 3rem;
+}
+
+.rectangle {
+    height: 20rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+}
+
+.rectangle:hover {
+    border-color: #393E46;
+    border-width: .2rem;
+}
+
+.grid {
+    display: flex;
+    grid-template-areas: "col1 col2 col2 col2";
+}
+
+.col1 {
+    flex: 0 0 auto; /* Prevents it from shrinking or growing */
+  }
+
+.col2 {
+    flex: 1;
+}
+
+.years_experience {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+/* Div of the image */
+.img_div_experience {
+    float: left;
+    margin-right: 0;
+    padding-left: 1rem;
+    position: absolute;
+}
+
+/* Image styling */
+.company_img_experience {
+    border-radius: 50%;
+    height: 3.5rem;
+}
+
+.text_company {
+    padding-left: 5rem;
+    padding-top: 1rem;
+    float: left;
+    overflow: hidden;
+}
+
+

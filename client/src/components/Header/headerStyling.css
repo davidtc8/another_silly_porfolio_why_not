@@ -51,9 +51,9 @@
 
 /* Night mode icon styling */
 .night_mode_div {
-    margin-right: -100rem;
+    display: flex;
+    margin-right: -45rem;
     position: absolute;
-    width: 50rem;
 }
 
 .night_icon {
