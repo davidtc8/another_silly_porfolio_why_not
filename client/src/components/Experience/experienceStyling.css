@@ -29,21 +29,24 @@
 
 .grid {
     display: grid;
-    grid-template-columns: auto 80%;
+    grid-template-columns: auto 70%;
 }
 
 .col1 {
     flex: 0 0 auto; /* Prevents it from shrinking or growing */
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .col2 {
     flex: 1;
+    align-content: center;
+    padding-top: 2rem;
 }
 
 .years_experience {
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 25%;
 }
 
 .grouper_name_and_logo {
@@ -83,4 +86,15 @@
     padding-bottom: .5rem;
 }
 
-
+.test_div {
+    overflow: hidden;
+  }
+  
+.text {
+    max-height: 100px; /* Set a max height to enable the read more/less functionality */
+    transition:  2s ease; /* Transition effect for max-height */
+}
+  
+.text.expanded {
+    max-height: 1000px; /* Expand to show all content */
+}
