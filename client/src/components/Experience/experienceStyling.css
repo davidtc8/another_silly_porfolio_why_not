@@ -1,6 +1,8 @@
 .main_div_experience_section {
     background-color: #222831;
     color: #EEEEEE;
+    height: auto !important;
+    padding-bottom: 10rem;
 }
 
 .experience_h1 {
@@ -12,11 +14,12 @@
 }
 
 .rectangle {
-    height: 20rem;
+    height: auto;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    padding-bottom: 1rem;
 }
 
 .rectangle:hover {
@@ -25,42 +28,73 @@
 }
 
 .grid {
-    display: flex;
-    grid-template-areas: "col1 col2 col2 col2";
+    display: grid;
+    grid-template-columns: auto 70%;
 }
 
 .col1 {
     flex: 0 0 auto; /* Prevents it from shrinking or growing */
-  }
+    justify-content: center;
+    padding-top: 2rem;
+}
 
 .col2 {
     flex: 1;
+    align-content: center;
+    padding-top: 2rem;
 }
 
 .years_experience {
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 25%;
+}
+
+.grouper_name_and_logo {
+    display: flex;
+    padding-bottom: .8rem;
 }
 
 /* Div of the image */
 .img_div_experience {
     float: left;
     margin-right: 0;
-    padding-left: 1rem;
-    position: absolute;
+    padding-right: 1rem;
+    overflow: hidden;
 }
 
 /* Image styling */
 .company_img_experience {
     border-radius: 50%;
-    height: 3.5rem;
+    height: 2rem;
 }
 
 .text_company {
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-top: 1rem;
-    float: left;
-    overflow: hidden;
 }
 
+.role_explanation_experience ul li {
+    list-style-type:disc;
+}
 
+.my_p_experience {
+    padding-bottom: .5rem;
+}
+
+.following_p_experience {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.test_div {
+    overflow: hidden;
+  }
+  
+.text {
+    max-height: 100px; /* Set a max height to enable the read more/less functionality */
+    transition:  2s ease; /* Transition effect for max-height */
+}
+  
+.text.expanded {
+    max-height: 1000px; /* Expand to show all content */
+}
