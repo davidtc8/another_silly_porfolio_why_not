@@ -80,7 +80,7 @@ const PopupImage = ({ imageUrl, children }) => {
         onClick={togglePopup}
       >
         <div 
-          className={`relative p-8 bg-white rounded-lg shadow-lg w-1/2 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
+          className={`relative p-8 bg-white rounded-lg shadow-lg w-1/4 h-3/4 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close button */}
@@ -92,7 +92,7 @@ const PopupImage = ({ imageUrl, children }) => {
           </button>
 
           {/* Image container */}
-          <div className="overflow-hidden">
+          <div className="h-full overflow-hidden">
             <img 
               src={imageUrl} 
               alt="Popup" 
