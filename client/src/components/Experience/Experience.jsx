@@ -80,7 +80,7 @@ const PopupImage = ({ imageUrl, children }) => {
         onClick={togglePopup}
       >
         <div 
-          className={`relative p-8 bg-white rounded-lg shadow-lg w-1/4 h-3/4 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
+          className={`relative p-8 bg-white rounded-lg shadow-lg w-1/5 h-1/2 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close button */}
@@ -110,7 +110,7 @@ export default function Experience() {
 
   return (
     <>
-      <div className='main_div_experience_section'>
+      <div id="experience" className='main_div_experience_section'>
         <div className='experience_h1'>
           <span className='text-6xl font-bold text-white'>
             Experience

@@ -4,6 +4,14 @@ import { FiMoon } from "react-icons/fi";
 import { LuDot } from "react-icons/lu";
 
 export default function Header() {
+
+  const scrollToExperience = () => {
+    const experienceElement = document.getElementById('experience');
+    if (experienceElement) {
+      experienceElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       {/* Image div */}
@@ -70,8 +78,8 @@ export default function Header() {
             </a>
 
             <span className="scroll-btn">
-              <a href="#">
-                <span className="mouse">
+              <a>
+                <span className="mouse" onClick={scrollToExperience} style={{cursor: "pointer"}}>
                   <span>
                   </span>
                 </span>
