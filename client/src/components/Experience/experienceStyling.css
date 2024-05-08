@@ -7,6 +7,7 @@
 
 .experience_h1 {
     text-align: center;
+    padding-top: 4rem;
 }
 
 .parent_section {
@@ -20,11 +21,6 @@
     margin-right: auto;
     transition: all 0.2s ease;
     padding-bottom: 1rem;
-}
-
-.rectangle:hover {
-    border-color: #393E46;
-    border-width: .2rem;
 }
 
 .grid {
@@ -97,4 +93,10 @@
   
 .text.expanded {
     max-height: 1000px; /* Expand to show all content */
+}
+
+@media (max-width: 1250px) {
+    .rectangle {
+        width: 85%;
+    }
 }

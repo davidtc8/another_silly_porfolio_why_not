@@ -51,6 +51,7 @@
 
 /* Night mode icon styling */
 .night_mode_div {
+    top: 10px;
     display: flex;
     margin-right: -45rem;
     position: absolute;
@@ -209,3 +210,19 @@
       -moz-animation: ani-mouse 2.5s linear infinite;
       animation: ani-mouse 2.5s linear infinite;
 }  
+
+@media (max-width: 1000px) {
+    .img_div {
+        margin-left: -20rem;
+    }
+    .night_mode_div {
+        margin-right: -30rem;
+    }
+    .my_journey_button {
+        margin-top: 8rem;
+    }
+    .welcome_section {
+        margin: auto 10% auto 10%;
+        padding-top: 10rem;
+    }
+  }
