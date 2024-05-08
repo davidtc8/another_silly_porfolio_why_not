@@ -226,3 +226,9 @@
         padding-top: 10rem;
     }
   }
+
+@media (max-width: 768px) {
+    .about_me_welcome_section{
+        margin-right: 2rem;
+    }
+}

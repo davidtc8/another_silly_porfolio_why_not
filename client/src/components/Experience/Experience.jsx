@@ -18,7 +18,7 @@ const ReadMore = ({children}) => {
   // Grabbing the content
   text = text.props['children'].props.children
   const [isReadMore, setIsReadMore] = useState(true);
-  const [textHeight, setTextHeight] = useState('500px');
+  const [textHeight, setTextHeight] = useState('800px');
   const [expanded, setExpanded] = useState(false);
   const textRef = useRef(null);
 
