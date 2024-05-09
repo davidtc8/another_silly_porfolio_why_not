@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
+import './readmoreStyling.css'
 
-export default function ReadMore({children}) {
+export default function ReadMore({children, letters}) {
     let text = children;
     // Grabbing the content
     text = text.props['children'].props.children
@@ -37,7 +38,7 @@ export default function ReadMore({children}) {
                     className={`read-or-hide ${!isReadMore ? "expanded" : ""}`}
                     style={{ color: "#00ADB5", cursor: 'pointer'}}
                 >  
-                    {isReadMore ? "Position Activities" : " show less"}
+                    {isReadMore ? letters : " show less"}
                 </span>
             </div>
         </div>

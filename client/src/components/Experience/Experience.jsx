@@ -43,7 +43,7 @@ export default function Experience() {
                       Full Stack Developer - Nymbus
                     </h1>
                   </div>
-                  <ReadMore>
+                  <ReadMore letters={"Position Activities"}>
                     <div className={`role_explanation_experience`}>
                       <ul>
                         <div className='years_responsive'>
@@ -86,7 +86,7 @@ export default function Experience() {
                       Full Stack Developer - Deacero
                     </h1>
                   </div>
-                  <ReadMore>
+                  <ReadMore letters={"Position Activities"}>
                     <div className={`role_explanation_experience`}>
                       <ul>
                         <div className='years_responsive'>
@@ -124,7 +124,7 @@ export default function Experience() {
                       Data Conversion Consultant - Workday
                     </h1>
                   </div>
-                  <ReadMore>
+                  <ReadMore letters={"Position Activities"}>
                     <div className={`role_explanation_experience`}>
                       <ul>
                         <div className='years_responsive'>Jun 2021 - Aug 2022</div>
@@ -165,7 +165,7 @@ export default function Experience() {
                       Associate Technical Consultant - Blue Yonder
                     </h1>
                   </div>
-                  <ReadMore>
+                  <ReadMore letters={"Position Activities"}>
                     <div className={`role_explanation_experience`}>
                       <ul>
                         <div className='years_responsive'>Jan 2021 - Jul 2021</div>
@@ -199,7 +199,7 @@ export default function Experience() {
                     IT Consultant - Xignux - Internship
                     </h1>
                   </div>
-                  <ReadMore>
+                  <ReadMore letters={"Position Activities"}>
                     <div className={`role_explanation_experience`}>
                       <ul>
                         <div className='years_responsive'>May 2019 - Jul 2019</div>
