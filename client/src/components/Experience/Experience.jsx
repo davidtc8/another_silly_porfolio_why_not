@@ -18,7 +18,7 @@ const ReadMore = ({children}) => {
   // Grabbing the content
   text = text.props['children'].props.children
   const [isReadMore, setIsReadMore] = useState(true);
-  const [textHeight, setTextHeight] = useState('500px');
+  const [textHeight, setTextHeight] = useState('800px');
   const [expanded, setExpanded] = useState(false);
   const textRef = useRef(null);
 
@@ -80,7 +80,7 @@ const PopupImage = ({ imageUrl, children }) => {
         onClick={togglePopup}
       >
         <div 
-          className={`relative p-8 bg-white rounded-lg shadow-lg w-1/5 h-1/2 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
+          className={`image_experience relative p-8 bg-white rounded-lg shadow-lg w-auto h-1/2 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close button */}
@@ -138,6 +138,10 @@ export default function Experience() {
                   <ReadMore>
                     <div className={`role_explanation_experience`}>
                       <ul>
+                        <div className='years_responsive'>
+                          Sep 2023 - Present
+                        </div>
+                        <br />
                         <p className='my_p_experience'><b>Daily Activities:</b></p>
                         <li>Agile work with daily meetings with Eastern Europe team (6am daily standups).</li>
                         <li>Enhancing frontend features for fintech product using JQuery, SCSS, HTML.</li>
@@ -177,7 +181,11 @@ export default function Experience() {
                   <ReadMore>
                     <div className={`role_explanation_experience`}>
                       <ul>
-                      <p className='my_p_experience'><b>Daily Activities:</b></p>
+                        <div className='years_responsive'>
+                          Feb 2023 - Sept 2023
+                        </div>
+                        <br />
+                        <p className='my_p_experience'><b>Daily Activities:</b></p>
                         <li>Developed internal applications using React.js, Python, <PopupImage imageUrl={SQLTraining}>SQL</PopupImage>, C# with Xamarin, and Kraken.</li>
                         <li>Daily scrum meetings with product owners to optimize outcomes.</li>
                         <li>Troubleshooting existing applications, ensuring high client satisfaction.</li>
@@ -211,6 +219,8 @@ export default function Experience() {
                   <ReadMore>
                     <div className={`role_explanation_experience`}>
                       <ul>
+                        <div className='years_responsive'>Jun 2021 - Aug 2022</div>
+                        <br />
                         <p className='my_p_experience'><b>Daily Activities:</b></p>
                         <li>Working directly with client, functional and internal team to perform data conversion.</li>
                         <li>Extracting customer data through ETL to perform data migration.</li>
@@ -250,6 +260,8 @@ export default function Experience() {
                   <ReadMore>
                     <div className={`role_explanation_experience`}>
                       <ul>
+                        <div className='years_responsive'>Jan 2021 - Jul 2021</div>
+                        <br />
                         <p className='my_p_experience'><b>Daily Activities:</b></p>
                         <li>Working with Cloud Operations Team.</li>
                         <li>Weekly meetings with clients to understand and work towards business needs.</li>
@@ -282,6 +294,8 @@ export default function Experience() {
                   <ReadMore>
                     <div className={`role_explanation_experience`}>
                       <ul>
+                        <div className='years_responsive'>May 2019 - Jul 2019</div>
+                        <br />
                         <p className='my_p_experience'><b>Daily Activities:</b></p>
                         <li>Developed a project overseas (<PopupImage imageUrl={Japan}>Japan</PopupImage>, <PopupImage imageUrl={China}>China</PopupImage>, Singapore, Malaysia, Indonesia, and India).</li>
                         <li>Lead a Project on the internet of things (IoT) and energy management.</li>

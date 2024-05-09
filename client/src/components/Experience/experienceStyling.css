@@ -7,6 +7,7 @@
 
 .experience_h1 {
     text-align: center;
+    padding-top: 4rem;
 }
 
 .parent_section {
@@ -20,11 +21,6 @@
     margin-right: auto;
     transition: all 0.2s ease;
     padding-bottom: 1rem;
-}
-
-.rectangle:hover {
-    border-color: #393E46;
-    border-width: .2rem;
 }
 
 .grid {
@@ -47,6 +43,10 @@
 .years_experience {
     padding-top: 2rem;
     padding-left: 25%;
+}
+
+.years_responsive {
+    display: none;
 }
 
 .grouper_name_and_logo {
@@ -97,4 +97,30 @@
   
 .text.expanded {
     max-height: 1000px; /* Expand to show all content */
+}
+
+@media (max-width: 1250px) {
+    .rectangle {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .rectangle{
+        width: 96%;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+
+    .col1 {
+        display: none;
+    }
+
+    .years_responsive {
+        display:flex;
+    }
 }
