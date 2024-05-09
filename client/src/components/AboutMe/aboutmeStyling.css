@@ -1,0 +1,40 @@
+.aboutme_main_section {
+    background-color: #222831;
+    height: 100vh;
+}
+
+.letter_section_box {
+    width: 50%; 
+    margin: auto auto auto auto;
+    color: #EEEEEE;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.full_summary_box {
+    margin: auto auto auto auto;
+    width: 50%;
+    padding-top: 1.5rem;
+}
+
+.header_section_writing {
+    padding-bottom: .5rem;
+}
+
+.full_explanation_writing {
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    .aboutme_main_section {
+        height: auto;
+    }
+
+    .letter_section_box {
+        width: 80%;
+    }
+
+    .full_summary_box {
+        width: 80%;
+    }
+}

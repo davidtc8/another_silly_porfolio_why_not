@@ -12,102 +12,10 @@ import SQLTraining from '../../assets/sql_training.jpeg'
 import AceriaDeacero from '../../assets/aceria_deacero.jpeg'
 import DinnerNymbus from '../../assets/nymbus_fun_time.jpeg'
 import { useState, useEffect, useRef } from 'react';
-
-const ReadMore = ({children}) => {
-  let text = children;
-  // Grabbing the content
-  text = text.props['children'].props.children
-  const [isReadMore, setIsReadMore] = useState(true);
-  const [textHeight, setTextHeight] = useState('800px');
-  const [expanded, setExpanded] = useState(false);
-  const textRef = useRef(null);
-
-  useEffect(() => {
-    if (textRef.current) {
-      const height = textRef.current.scrollHeight;
-      setTextHeight(`${height}px`);
-    }
-  }, [text]);
-
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
-    setExpanded(!expanded);
-    if (textRef.current) {
-      const height = textRef.current.scrollHeight;
-      setTextHeight(`${height}px`);
-    }
-  };
-  
-  return (
-      <div className='test_div transition delay-700 duration-300 ease-in-out'>
-        <div 
-          className={`text ${!isReadMore ? "expanded" : ""}`} 
-          style={{ maxHeight: expanded ? textHeight : '100px' }}
-          >
-            {isReadMore  ? null : text}
-            <span
-                onClick={toggleReadMore}
-                className={`read-or-hide ${!isReadMore ? "expanded" : ""}`}
-                style={{ color: "#00ADB5", cursor: 'pointer'}}
-            >  
-                {isReadMore ? "Position Activities" : " show less"}
-            </span>
-        </div>
-      </div>
-  );
-};
-
-const PopupImage = ({ imageUrl, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <>
-      {/* Link to open the popup */}
-      <a 
-        onClick={togglePopup}
-        style={{ color: "#00ADB5", cursor: 'pointer'}}
-      >
-        {children}
-      </a>
-
-      {/* Popup */}
-      <div 
-        className={`fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-gray-500 bg-opacity-50 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
-        onClick={togglePopup}
-      >
-        <div 
-          className={`image_experience relative p-8 bg-white rounded-lg shadow-lg w-auto h-1/2 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          {/* Close button */}
-          <button 
-            className="absolute top-0 right-0 m-4 text-gray-700 hover:text-red-500"
-            onClick={togglePopup}
-          >
-            &times;
-          </button>
-
-          {/* Image container */}
-          <div className="h-full overflow-hidden">
-            <img 
-              src={imageUrl} 
-              alt="Popup" 
-              className="w-full h-full object-contain" 
-            />
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+import ReadMore from '../HelpfulFunctions/ReadMore'
+import PopupImage from '../HelpfulFunctions/PopupImage'
 
 export default function Experience() {
-  
-
   return (
     <>
       <div id="experience" className='main_div_experience_section'>
