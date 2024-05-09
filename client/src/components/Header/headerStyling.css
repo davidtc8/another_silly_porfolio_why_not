@@ -1,5 +1,9 @@
 /* ---------------- NAVBAR STYLING ------------------------ */
 
+.burger {
+    display: none !important;
+}
+
 /* Whole header section */
 .main_navbar_div {
     height: 100vh;
@@ -211,6 +215,8 @@
       animation: ani-mouse 2.5s linear infinite;
 }  
 
+/* Responsiveness! */
+
 @media (max-width: 1000px) {
     .img_div {
         margin-left: -20rem;
@@ -230,5 +236,60 @@
 @media (max-width: 768px) {
     .about_me_welcome_section{
         margin-right: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .img_navbar {
+        height: 2.5rem;
+    }
+
+    .img_div {
+        margin-right: 10rem;
+        position: absolute;
+        margin-left: -10rem;
+    }
+
+    .circular_component {
+        display: none;
+    }
+
+    .content_navbar {
+        gap: 3rem;
+        margin-right: 0rem;
+        white-space: nowrap;
+    }
+
+    .night_icon {
+
+    }
+
+    .welcome_section {
+        width: 90%;
+    }
+
+    .burger {
+        padding-top: .7rem;
+        display: flex !important;
+    }
+
+    .hideMenuNav {
+        display: none;
+      }
+    
+    .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: #222831;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
