@@ -45,6 +45,10 @@
     padding-left: 25%;
 }
 
+.years_responsive {
+    display: none;
+}
+
 .grouper_name_and_logo {
     display: flex;
     padding-bottom: .8rem;
@@ -104,5 +108,19 @@
 @media (max-width: 768px) {
     .rectangle{
         width: 96%;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+
+    .col1 {
+        display: none;
+    }
+
+    .years_responsive {
+        display:flex;
     }
 }
