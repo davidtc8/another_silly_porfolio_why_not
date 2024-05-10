@@ -4,6 +4,10 @@
     display: none !important;
 }
 
+.block {
+    cursor: pointer;
+}
+
 /* Whole header section */
 .main_navbar_div {
     background-color: #222831;
@@ -310,7 +314,7 @@
     }
 
     .my_journey_button {
-        margin-top: 10rem;
+        margin-top: 12rem;
     }
     
     .scroll-btn {

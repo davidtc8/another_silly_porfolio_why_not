@@ -1,0 +1,16 @@
+.text {
+    max-height: 100px; /* Set a max height to enable the read more/less functionality */
+    transition:  2s ease; /* Transition effect for max-height */
+}
+
+.text.expanded {
+    max-height: 1000px; /* Expand to show all content */
+}
+
+.test_div {
+    overflow: hidden;
+  }
+
+.expanded span {
+    line-height: 3rem;
+}
