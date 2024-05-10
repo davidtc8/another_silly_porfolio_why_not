@@ -29,12 +29,12 @@ export default function WelcomeSection() {
                 </span>
                 <br />
                 <span className='about_me_welcome_section text-gray-400 text-xl font-normal'>
-                <p className='first_about_me_p'>
-                    Software Engineer and tech enthusiast based in Monterrey, Mexico 🇲🇽
-                </p>
-                <p>
-                    Welcome to this blog/portfolio/site where you'll be able to see the latest work I'm working on.
-                </p> 
+                    <p className='first_about_me_p'>
+                        Software Engineer and tech enthusiast based in Monterrey, Mexico 🇲🇽
+                    </p>
+                    <p>
+                        Welcome to this blog/portfolio/site where you'll be able to see the latest work I'm working on.
+                    </p> 
                 </span>
                 <a href="my_journey">
                 <button type="button" className="my_journey_button text-white border border-yellow-400 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-yellow-100">
