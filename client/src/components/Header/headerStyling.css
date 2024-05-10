@@ -4,6 +4,10 @@
     display: none !important;
 }
 
+.block {
+    cursor: pointer;
+}
+
 /* Whole header section */
 .main_navbar_div {
     background-color: #222831;

@@ -20,7 +20,7 @@
 
 .full_summary_box {
     margin: auto auto auto auto;
-    width: 50%;
+    width: 60%;
     padding-top: 1.5rem;
 }
 
@@ -50,6 +50,32 @@
     list-style-type:none;
 }
 
+.grid_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 5rem;
+}
+
+.col1AboutMe {
+    flex: 0 0 auto; /* Prevents it from shrinking or growing */
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.col2AboutMe {
+    flex: 0 0 auto;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.ul_indent {
+    padding-left: 35px;
+}
+
+.li_indent {
+    list-style-type: circle;
+}
+
 @media (max-width: 500px) {
     .aboutme_main_section {
         height: 100vh;
@@ -58,10 +84,30 @@
     }
 
     .letter_section_box {
+        width: 70% !important; 
+    }
+
+    .letter_section_box {
         width: 80%;
     }
 
     .full_summary_box {
         width: 80%;
+    }
+
+    .grid_section {
+        display: inherit;
+    }
+
+    .full_explanation_writing {
+        padding-bottom: 1.5rem;
+    }
+
+    .col1AboutMe {
+        padding-top: .5rem;
+    }
+
+    .col2AboutMe {
+        padding-top: .5rem;
     }
 }
