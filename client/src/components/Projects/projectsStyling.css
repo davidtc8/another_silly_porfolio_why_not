@@ -1,0 +1,27 @@
+.main_wrapper_projects {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.projects_main_section {
+    background-color: #222831;
+    flex: 1; /* or height: 100%; */
+    overflow-y: auto; 
+}
+
+.letters_projects {
+    width: 50%; 
+    margin: auto auto auto auto;
+    color: #EEEEEE;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.project_description_section {
+    text-align: center;
+}
+
+.first_about_me_projects_p {
+    padding-top: 1rem;
+}
