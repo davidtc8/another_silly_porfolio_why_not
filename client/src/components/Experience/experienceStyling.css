@@ -26,6 +26,16 @@
 .grid {
     display: grid;
     grid-template-columns: auto 70%;
+    padding-bottom: 2rem;
+    border: 2px solid transparent;; /* Transparent border initially */
+    transition: border-color 0.5s ease;
+    transform: scale(1);
+    margin-bottom: 1rem;
+}
+
+.grid:hover {
+    border-color:#153448; /* Change border color on hover */
+    transform: scale(1.05);
 }
 
 .col1 {
