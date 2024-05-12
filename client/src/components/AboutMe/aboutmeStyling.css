@@ -60,12 +60,31 @@
     flex: 0 0 auto; /* Prevents it from shrinking or growing */
     justify-content: center;
     padding-top: 2rem;
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+    transform: scale(1);
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+}
+
+.col1AboutMe:hover {
+    border-color:#153448; /* Change border color on hover */
+    transform: scale(1.05);
 }
 
 .col2AboutMe {
     flex: 0 0 auto;
     justify-content: center;
     padding-top: 2rem;
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+    transform: scale(1);
+    margin-bottom: 1rem;
+}
+
+.col2AboutMe:hover {
+    border-color:#153448; /* Change border color on hover */
+    transform: scale(1.05);
 }
 
 .ul_indent {
