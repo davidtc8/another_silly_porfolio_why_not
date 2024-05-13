@@ -26,7 +26,7 @@ export default function Aboutme() {
           <div className='about_me_section grid_section text-gray-400 text-md font-normal'>
             {/* --------- FIRST ROW -------- */}
             <div className='col1AboutMe'>
-              <div className='header_section_writing'>
+              <div className='header_section_writing text-gray-400 text-xl font-normal'>
                 Why do I like to code
               </div>
               <div className='full_explanation_writing'>
@@ -44,7 +44,7 @@ export default function Aboutme() {
               </div>
             </div>
             <div className='col2AboutMe'>
-              <div className='header_section_writing'>
+              <div className='header_section_writing text-gray-400 text-xl font-normal'>
                 Some Certifications
               </div>
               <div className='full_explanation_writing'>
@@ -91,7 +91,7 @@ export default function Aboutme() {
             </div>
             {/* --------- SECOND ROW -------- */}
             <div className='col1AboutMe'>
-              <div className='header_section_writing'>
+              <div className='header_section_writing text-gray-400 text-xl font-normal'>
                 Tech Stack I currently use
               </div>
               <div className='full_explanation_writing'>
@@ -149,7 +149,7 @@ export default function Aboutme() {
               </div>
             </div>
             <div className='col2AboutMe'>
-              <div className='header_section_writing'>
+              <div className='header_section_writing text-gray-400 text-xl font-normal'>
                 Hobbies
               </div>
               <div className='full_explanation_writing'>
@@ -166,7 +166,7 @@ export default function Aboutme() {
             </div>
             {/* --------- THIRD ROW -------- */}
             <div className='col1AboutMe'>
-              <div className='header_section_writing'>
+              <div className='header_section_writing text-gray-400 text-xl font-normal'>
                 Random things to know
               </div>
               <div className='full_explanation_writing'>
@@ -184,7 +184,7 @@ export default function Aboutme() {
               </div>
             </div>
             <div className='col2AboutMe'>
-              <div className='header_section_writing'>
+              <div className='header_section_writing text-gray-400 text-xl font-normal'>
                 What I'm currently working on
               </div>
               <div className='full_explanation_writing'>

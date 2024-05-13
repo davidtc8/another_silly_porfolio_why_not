@@ -28,6 +28,7 @@
     grid-template-columns: auto 70%;
     padding-bottom: 2rem;
     border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 10px;
     transition: 0.5s ease;
     transform: scale(1);
     margin-bottom: 1rem;

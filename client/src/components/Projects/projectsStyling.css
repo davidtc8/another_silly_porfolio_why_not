@@ -7,6 +7,7 @@
 .projects_main_section {
     background-color: #222831;
     flex: 1; /* or height: 100%; */
+    overflow-x: hidden;
     overflow-y: auto; 
 }
 
@@ -24,4 +25,84 @@
 
 .first_about_me_projects_p {
     padding-top: 1rem;
+}
+
+.project_showcase_mainwrapper {
+    padding-top: 3rem;
+    margin: auto auto auto auto;
+    width: 60%;
+}
+
+.gridProjects {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    
+}
+
+.grid_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 7rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    transform: scale(1);
+    margin-right: .5rem;
+}
+
+.grid_item:hover {
+    border-color:#153448; /* Change border color on hover */
+    transform: scale(1.05);
+}
+
+.image_project {
+    width: 500px; /* Set the width to make the image bigger */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px;
+}
+
+.grid_item:nth-child(odd) .col1Projects {
+    order: 2; /* Swap order for odd grid items */
+}
+
+.grid_item:nth-child(odd) .col2Projects {
+    order: 1; /* Swap order for odd grid items */
+}
+
+.col2Projects {
+    text-align: center;
+}
+
+.title_description {
+    color: white;
+}
+
+@media (max-width: 1600px) {
+    .gridProjects {
+        display: block;
+        grid-template-columns: 50% 50%;
+        border: 2px solid transparent;
+        transition: 0.5s ease;
+    }
+
+    .grid_item {
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .col1_big_box {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0rem !important;
+    }
+
+    .image_project {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col2Projects {
+        padding-bottom: 1rem;
+    }
 }

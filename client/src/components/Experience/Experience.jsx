@@ -122,6 +122,7 @@ export default function Experience() {
                         <li>Built an automation script that extracts 10,000+ data from different APIs to make data injection to our databases.</li>
                         <p className='following_p_experience'><b>Achievements:</b></p>
                         <li>Visited <PopupImage imageUrl={AceriaDeacero}>Aceria Deacero in Celaya</PopupImage> to seek ways to enhance the software we develop by engaging closely with users, soliciting their needs, and gaining insight into their daily routines.</li>
+                        <p className='following_p_experience'><b>Tech Stack:</b></p>
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           <li className="mr-2 mb-2">
                             <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
@@ -185,6 +186,7 @@ export default function Experience() {
                         <li>Certified in Advanced Data Conversion.</li>
                         <li>Hired as the <PopupImage imageUrl={WorkdayDinner}>second data conversion member in Mexico.</PopupImage></li>
                         <li>10x Successful Go-lives</li>
+                        <p className='following_p_experience'><b>Tech Stack:</b></p>
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           <li className="mr-2 mb-2">
                             <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
@@ -241,6 +243,7 @@ export default function Experience() {
                         <li>Installing Transportation Manager solution in Test, Dev, and Prod servers using remote desktops on Azure.</li>
                         <li>Developed a framework to automate various tasks using Python and PowerShell.</li>
                         <li>Working with Azure Cloud.</li>
+                        <p className='following_p_experience'><b>Tech Stack:</b></p>
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           <li className="mr-2 mb-2">
                             <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
@@ -300,6 +303,7 @@ export default function Experience() {
                         <p className='following_p_experience'><b>Achievements:</b></p>
                         <li><PopupImage imageUrl={ExcellenceAward}>Excellence Award</PopupImage> for developing the best project out of 24.</li>
                         <li>Business meetings with more than 24 Business Managers, interactions with 3 embassies, 4 consulates, and 4 tech fairs (e.g., SNEC 2019)</li>
+                        <p className='following_p_experience'><b>Tech Stack:</b></p>
                         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                           <li className="mr-2 mb-2">
                             <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
