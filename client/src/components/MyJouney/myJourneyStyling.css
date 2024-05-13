@@ -1,0 +1,35 @@
+.main_wrapper_journey {
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.my_journey_main_section {
+    background-color: #222831;
+    flex: 1; /* or height: 100%; */
+    overflow-y: auto;
+}
+
+.big_letter_section {
+    width: 50%; 
+    margin: auto auto auto auto;
+    color: #EEEEEE;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.first_about_me_projects_p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+    .first_about_me_projects_p {
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+}
