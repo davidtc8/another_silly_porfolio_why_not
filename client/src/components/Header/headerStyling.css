@@ -310,7 +310,8 @@
     }
 
     .name_welcome_section {
-        font-size: 3.3rem !important;
+        font-size: 3rem !important;
+        text-align: none;
     }
 
     .my_journey_button {
