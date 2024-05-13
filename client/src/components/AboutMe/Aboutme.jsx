@@ -18,7 +18,7 @@ export default function Aboutme() {
     <div className='main_wrapper'>
       <div className='aboutme_main_section'>
         <div className='letter_section_box'>
-          <span className='about_me_bigletters_section text-6xl p-4 text-center font-bold from-cyan-400 via-cyan-600 to-sky-200 bg-gradient-to-r bg-clip-text text-transparent'>
+          <span className='text-6xl p-4 text-center font-bold from-cyan-400 via-cyan-600 to-sky-200 bg-gradient-to-r bg-clip-text text-transparent'>
             About Me!
           </span>
         </div>

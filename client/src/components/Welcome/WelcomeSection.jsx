@@ -36,7 +36,7 @@ export default function WelcomeSection() {
                         Welcome to this blog/portfolio/site where you'll be able to see the latest work I'm working on.
                     </p> 
                 </span>
-                <a href="my_journey">
+                <a href="/my_journey">
                 <button type="button" className="my_journey_button text-white border border-yellow-400 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-yellow-100">
                     My Journey
                 </button>

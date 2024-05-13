@@ -22,10 +22,10 @@ export default function Header() {
           <div className='circular_component'>
             <div className='content_navbar'>
               <li>
-                <ul><a href="aboutme">About me</a></ul>
+                <ul><a href="projects">Projects</a></ul>
               </li>
               <li>
-                <ul><a href="projects">Projects</a></ul>
+                <ul><a href="aboutme">About me</a></ul>
               </li>
               <li>
                 <ul><a href="other">Other</a></ul>
