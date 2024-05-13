@@ -183,7 +183,7 @@ export default function Projects() {
                             </div>
                             <div className='col2Projects'>
                                 <div className='col1Projects'>
-                                    <a href="My_First_RPG_Game" target="_blank">
+                                    <a href="https://github.com/davidtc8/My_First_RPG_Game" target="_blank">
                                         <img className='image_project' src={RPGGame} alt="rpg-game-python" />
                                     </a>
                                 </div>
