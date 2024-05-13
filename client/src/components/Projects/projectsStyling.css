@@ -7,6 +7,7 @@
 .projects_main_section {
     background-color: #222831;
     flex: 1; /* or height: 100%; */
+    overflow-x: hidden;
     overflow-y: auto; 
 }
 
@@ -24,4 +25,119 @@
 
 .first_about_me_projects_p {
     padding-top: 1rem;
+}
+
+.project_showcase_mainwrapper {
+    padding-top: 3rem;
+    margin: auto auto auto auto;
+    width: 60%;
+}
+
+.gridProjects {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    
+}
+
+.grid_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    transform: scale(1);
+    margin-right: .5rem;
+}
+
+.grid_item:hover {
+    border-color:#153448; /* Change border color on hover */
+    transform: scale(1.05);
+}
+
+.image_project {
+    width: 500px; /* Set the width to make the image bigger */
+    height: 500px;
+    max-height: 200px;
+    max-width: 500px;
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col2Projects {
+    text-align: center;
+}
+
+.title_description {
+    color: white;
+}
+
+.grid_item .col1Projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+@media (max-width: 16000px) {
+    .image_project {
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .gridProjects {
+        display: block;
+        grid-template-columns: 50% 50%;
+        border: 2px solid transparent;
+        transition: 0.5s ease;
+    }
+
+    .grid_item {
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .col1_big_box {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0rem !important;
+    }
+
+    .image_project {
+        width: 400px !important;
+        height: auto;
+        display: block;
+        max-height: 200px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col2Projects {
+        padding-bottom: 1rem;
+        width: 100%;
+        grid-area: col2Projects;
+    }
+
+    .responsive_col1_box {
+        width: 100%;
+        grid-area: responsive_col1_box;
+    }
+
+    .responsive_layout {
+        display: grid;
+        grid-template-areas: 
+        "col2Projects col2Projects"
+        "responsive_col1_box responsive_col1_box";
+    }
+}
+
+@media (max-width: 800px) {
+    .image_project {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 }
