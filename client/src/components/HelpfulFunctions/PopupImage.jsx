@@ -1,3 +1,5 @@
+import './popupImageStyling.css'
+
 import { useState } from "react";
 
 export default function PopupImage({ imageUrl, children }) {
@@ -23,7 +25,7 @@ export default function PopupImage({ imageUrl, children }) {
             onClick={togglePopup}
         >
             <div 
-            className={`image_experience relative p-8 bg-white rounded-lg shadow-lg w-auto h-1/2 transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
+            className={`image_experience relative p-8 bg-white rounded-lg shadow-lg w-auto transform transition-transform duration-300 ${isOpen ? 'scale-200' : 'scale-90'}`}
             onClick={(e) => e.stopPropagation()}
             >
             {/* Close button */}
