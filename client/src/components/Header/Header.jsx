@@ -2,11 +2,25 @@ import './headerStyling.css'
 import image from '../../assets/image_dave.jpeg'
 import { FiMoon } from "react-icons/fi";
 import { LuDot } from "react-icons/lu";
-import { useState } from 'react';
+import { MdOutlineLightMode } from "react-icons/md";
+import { useEffect, useState } from 'react';
 
 export default function Header() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.querySelector('html').classList.add('dark')
+    } else {
+        document.querySelector('html').classList.remove('dark')
+    }
+  }, [theme])
+
+  const handleTheme = () => {
+    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
+  }
 
   return (
     <>
@@ -82,8 +96,9 @@ export default function Header() {
             </nav>
           </div>
           <div className='night_mode_div'>
-            <FiMoon className='night_icon' size={30}>
-            </FiMoon>
+            <button onClick={handleTheme}>
+              {theme === 'dark' ? <FiMoon className='night_icon' size={30}></FiMoon> : <MdOutlineLightMode className='night_icon' size={30}></MdOutlineLightMode>}
+            </button>
           </div>
         </div>
       </div>

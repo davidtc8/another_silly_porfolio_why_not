@@ -315,10 +315,16 @@
     }
 
     .my_journey_button {
-        margin-top: 12rem;
+        margin-top: 10rem;
     }
     
     .scroll-btn {
         margin-top: 5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .my_journey_button {
+        margin-top: 13rem;
     }
 }

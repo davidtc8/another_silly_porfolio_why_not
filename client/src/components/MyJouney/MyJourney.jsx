@@ -16,7 +16,7 @@ export default function MyJourney() {
                     </span>
                 </div>
                 <span className='project_description_section text-gray-400 text-lg font-normal'>
-                    <p className='first_about_me_projects_p'>
+                    <p className='first_about_me_my_journey_p'>
                     Embarking on my coding journey four years ago, I've delved into the intricate world of <PopupImage imageUrl={MeProgramming}>programming</PopupImage>, with a primary focus on JavaScript, 
                     HTML, CSS, and Python. Through countless hours of <PopupImage imageUrl={SimplyMe}>learning</PopupImage>, experimentation, and project development, I've cultivated a strong 
                     foundation in these languages, enabling me to tackle a variety of web development challenges with confidence and creativity.
