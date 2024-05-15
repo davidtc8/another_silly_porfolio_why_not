@@ -9,8 +9,20 @@
 }
 
 /* Whole header section */
-.main_navbar_div {
+.darkModeTheme {
     background-color: #222831;
+}
+
+.lightModeTheme {
+    background-color: #CDF5FD;
+}
+
+.main_welcome_section_dark_mode {
+    color: #EEEEEE;
+}
+
+.main_welcome_section_light_mode {
+    background-color: #CDF5FD;
 }
 
 .main_welcome_section {
@@ -20,7 +32,6 @@
 
 /* Top section */
 .main_navbar_component {
-    color: #EEEEEE;
     margin-left: 14rem; /* 384px */
     margin-right: 14rem; /* 384px */
     padding-top: 1rem;

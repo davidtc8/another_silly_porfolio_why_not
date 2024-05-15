@@ -2,32 +2,38 @@ import './headerStyling.css'
 import image from '../../assets/image_dave.jpeg'
 import { FiMoon } from "react-icons/fi";
 import { LuDot } from "react-icons/lu";
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { toggleTheme } from '../../features/theme/themeReducer'
 
-export default function Header() {
-
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.querySelector('html').classList.add('dark')
-    } else {
-        document.querySelector('html').classList.remove('dark')
-    }
-  }, [theme])
+function Header({ theme, toggleTheme}) {
 
   const handleTheme = () => {
-    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
-  }
+    toggleTheme(); // Dispatch the toggleTheme action
+  };
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  // const [theme, setTheme] = useState("light");
+
+  // useEffect(() => {
+  //   if (theme === "dark") {
+  //     document.querySelector('html').classList.add('dark')
+  //   } else {
+  //       document.querySelector('html').classList.remove('dark')
+  //   }
+  // }, [theme])
+
+  // const handleTheme = () => {
+  //   setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
+  // }
 
   return (
     <>
       {/* Image div */}
-      <div className= "main_navbar_div">
+      <div className= {`${theme === 'dark' ? 'darkModeTheme' : 'lightModeTheme'}`}>
         {/* Start Creating the circular div inside the image */}
-        <div className="main_navbar_component">
+        <div className={`main_navbar_component ${theme === 'dark' ? 'main_welcome_section_dark_mode' : 'main_welcome_section_light_mode'}`}>
           <div className='img_div'>
             <a href="/">
               <img src={image} alt="" className='img_navbar' href="home"/>
@@ -106,3 +112,12 @@ export default function Header() {
   )
 }
 
+const mapStateToProps = (state) => ({
+  theme: state.theme.theme // Accessing the theme state from Redux store
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleTheme: () => dispatch(toggleTheme()) // Dispatch the toggleTheme action
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

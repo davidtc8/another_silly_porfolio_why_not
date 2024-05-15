@@ -1,8 +1,11 @@
 import '../Header/headerStyling.css'
 import { useState } from 'react';
+import { connect } from 'react-redux';
 import Experience from '../Experience/Experience'
 
-export default function WelcomeSection() {
+function WelcomeSection({ theme }) {
+
+    console.log(theme); // Access theme prop
 
     const scrollToExperience = () => {
         const experienceElement = document.getElementById('experience');
@@ -10,8 +13,6 @@ export default function WelcomeSection() {
           experienceElement.scrollIntoView({ behavior: 'smooth' });
         }
       };
-    
-    const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <>
@@ -67,3 +68,9 @@ export default function WelcomeSection() {
     </>
   )
 }
+
+const mapStateToProps = (state) => ({
+    theme: state.theme.theme // Accessing the theme state from Redux store
+  });
+  
+export default connect(mapStateToProps)(WelcomeSection); // Connect component to Redux store
