@@ -140,4 +140,8 @@
         height: auto;
         width: auto\9; /* ie8 */
     }
+
+    .project_description_section {
+        text-align: -webkit-center;
+    }
 }
