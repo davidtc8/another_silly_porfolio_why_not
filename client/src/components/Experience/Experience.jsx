@@ -14,13 +14,14 @@ import DinnerNymbus from '../../assets/nymbus_fun_time.jpeg'
 import { useState, useEffect, useRef } from 'react';
 import ReadMore from '../HelpfulFunctions/ReadMore'
 import PopupImage from '../HelpfulFunctions/PopupImage'
+import { connect } from 'react-redux';
 
-export default function Experience() {
+function Experience({ theme }) {
   return (
     <>
-      <div id="experience" className='main_div_experience_section'>
+      <div id="experience" className={`main_div_experience_section ${theme === 'dark' ? 'main_div_experience_section_dark_theme' : 'main_div_experience_section_light_theme'}`}>
         <div className='experience_h1'>
-          <span className='text-6xl font-bold text-white'>
+          <span className={`text-6xl font-bold ${theme === 'dark' ? 'text-white' : 'text-cyan-600'}`}>
             Experience
           </span>
         </div>
@@ -333,3 +334,10 @@ export default function Experience() {
     </>
   )
 }
+
+
+const mapStateToProps = (state) => ({
+  theme: state.theme.theme // Accessing the theme state from Redux store
+});
+
+export default connect(mapStateToProps)(Experience); // Connect component to Redux store
