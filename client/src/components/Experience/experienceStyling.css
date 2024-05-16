@@ -1,8 +1,18 @@
+@import url('../../appStyling.css');
+
 .main_div_experience_section {
-    background-color: #222831;
-    color: #EEEEEE;
     height: auto !important;
     padding-bottom: 10rem;
+}
+
+.main_div_experience_section_dark_theme {
+    background-color: var(--dark-mode-color);
+    color: #EEEEEE;
+}
+
+.main_div_experience_section_light_theme {
+    background-color: var(--light-mode-color);
+    color: black;
 }
 
 .experience_h1 {

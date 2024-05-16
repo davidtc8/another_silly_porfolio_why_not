@@ -1,3 +1,4 @@
+@import url('../../appStyling.css');
 /* ---------------- NAVBAR STYLING ------------------------ */
 
 .burger {
@@ -10,23 +11,25 @@
 
 /* Whole header section */
 .darkModeTheme {
-    background-color: #222831;
+    background-color: var(--dark-mode-color);
 }
 
 .lightModeTheme {
-    background-color: #CDF5FD;
+    background-color: var(--light-mode-color);
 }
 
 .main_welcome_section_dark_mode {
     color: #EEEEEE;
+    background-color: var(--dark-mode-color);
+    
 }
 
 .main_welcome_section_light_mode {
-    background-color: #CDF5FD;
+    color: black !important;
+    background-color: var(--light-mode-color);
 }
 
 .main_welcome_section {
-    background-color: #222831;
     height: 100vh;
 }
 
@@ -53,9 +56,16 @@
 }
 
 /* Div of the circular navigation area */
+.circular_component_black {
+    border-color: rgb(56 189 248) !important;
+}
+
+.circular_component_light {
+    border-color: var(--light-mode-color-buttons) !important;
+}
+
 .circular_component {
     border-radius: 30px;
-    border-color: white;
     border: 2px solid;
 }
 
@@ -78,6 +88,15 @@
     display: flex;
     margin-right: -45rem;
     position: absolute;
+    color: var(--light-mode-color-buttons);
+}
+
+.night_icon_dark {
+    color: #40A2E3;
+}
+
+.night_icon_light {
+    color: var(--light-mode-color-buttons);
 }
 
 .night_icon {
@@ -86,8 +105,15 @@
 }
 
 /* Welcome Section */
+.welcome_section_dark {
+    background-color: var(--dark-mode-color);
+}
+
+.welcome_section_light {
+    background-color: var(--light-mode-color);
+}
+
 .welcome_section {
-    background-color: #222831;
     width: 50%;
     margin: auto 50% auto auto;
     color: #EEEEEE;
@@ -191,15 +217,31 @@
       line-height: 18px;
       font-size: 13px;
       font-weight: normal;
-      color: #7f8c8d;
-      color: #ffffff;
+      
       font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
       letter-spacing: 2px;
 }
-  .scroll-btn > *:hover,
-  .scroll-btn > *:focus,
-  .scroll-btn > *.active {
+
+.scroll-btn-dark > * {
+    color: #7f8c8d;
+    color: #ffffff;
+}
+
+.scroll-btn-light > * {
+    color: #7f8c8d;
+    color: var(--light-mode-color-buttons);
+}
+
+.scroll-btn-dark > *:hover,
+.scroll-btn-dark > *:focus,
+.scroll-btn-dark > *.active {
       color: #ffffff;
+}
+
+.scroll-btn-light > *:hover,
+.scroll-btn-light > *:focus,
+.scroll-btn-light > *.active {
+      color: var(--light-mode-color-buttons);
 }
   .scroll-btn > *:hover,
   .scroll-btn > *:focus,
@@ -208,6 +250,15 @@
       opacity: 0.8;
       filter: alpha(opacity=80);
 }
+
+.scroll-btn-dark .mouse {
+    border: 3px solid white;
+}
+
+.scroll-btn-light .mouse {
+    border: 3px solid var(--light-mode-color-buttons);
+}
+
 .scroll-btn .mouse {
       position: relative;
       display: block;
@@ -217,9 +268,17 @@
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      border: 3px solid white;
       border-radius: 23px;
 }
+
+.scroll-btn-dark .mouse > * {
+    background: white;
+}
+
+.scroll-btn-light .mouse > * {
+    background: var(--light-mode-color-buttons);
+}
+
 .scroll-btn .mouse > * {
       position: absolute;
       display: block;
@@ -228,7 +287,6 @@
       width: 8px;
       height: 8px;
       margin: -4px 0 0 -4px;
-      background: white;
       border-radius: 50%;
       -webkit-animation: ani-mouse 2.5s linear infinite;
       -moz-animation: ani-mouse 2.5s linear infinite;

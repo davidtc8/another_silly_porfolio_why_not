@@ -9,24 +9,20 @@ import { toggleTheme } from '../../features/theme/themeReducer'
 
 function Header({ theme, toggleTheme}) {
 
+  const rootHTML = document.getElementById('root')
   const handleTheme = () => {
+    console.log(rootHTML.classList[0])
+    if(rootHTML.classList[0] === 'darkModeTheme') {
+      rootHTML.classList.remove('darkModeTheme')
+      rootHTML.classList.add('lightModeTheme')
+    } else if (rootHTML.classList[0] === 'lightModeTheme'){
+      rootHTML.classList.remove('lightModeTheme')
+      rootHTML.classList.add('darkModeTheme')
+    }
     toggleTheme(); // Dispatch the toggleTheme action
   };
 
   const [isNavOpen, setIsNavOpen] = useState(false);
-  // const [theme, setTheme] = useState("light");
-
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     document.querySelector('html').classList.add('dark')
-  //   } else {
-  //       document.querySelector('html').classList.remove('dark')
-  //   }
-  // }, [theme])
-
-  // const handleTheme = () => {
-  //   setTheme(prevTheme => prevTheme === "light" ? "dark" : "light")
-  // }
 
   return (
     <>
@@ -39,7 +35,7 @@ function Header({ theme, toggleTheme}) {
               <img src={image} alt="" className='img_navbar' href="home"/>
             </a>
           </div>
-          <div className='circular_component'>
+          <div className={`circular_component ${theme === 'dark' ? 'circular_component_black' : 'circular_component_light'}`}>
             <div className='content_navbar'>
               <li>
                 <ul><a href="projects">Projects</a></ul>
@@ -101,7 +97,7 @@ function Header({ theme, toggleTheme}) {
               </section>
             </nav>
           </div>
-          <div className='night_mode_div'>
+          <div className={`night_mode_div ${theme === 'dark' ? 'night_icon_dark' : 'night_icon_light'}`}>
             <button onClick={handleTheme}>
               {theme === 'dark' ? <FiMoon className='night_icon' size={30}></FiMoon> : <MdOutlineLightMode className='night_icon' size={30}></MdOutlineLightMode>}
             </button>
