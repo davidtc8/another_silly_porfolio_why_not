@@ -4,6 +4,7 @@ import WelcomeSection from './components/Welcome/WelcomeSection'
 import AboutMe from './components/AboutMe/Aboutme'
 import Projects from './components/Projects/Projects'
 import MyJourney from './components/MyJouney/MyJourney'
+
 import './appStyling.css'
 
 function App() {
