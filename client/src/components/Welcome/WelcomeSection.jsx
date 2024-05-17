@@ -23,10 +23,10 @@ function WelcomeSection({ theme }) {
     <div className={`main_welcome_section ${theme === 'dark' ? 'main_welcome_section_dark_mode' : 'main_welcome_section_light_mode'}`}>
         <div className={`welcome_section ${theme === 'dark' ? 'welcome_section_dark' : 'welcome_section_light'}`}>
             <div className='welcome_letters_section'>
-                <span className={`hey_there_welcome_section text-6xl p-4 text-center font-bold ${theme === 'dark' ? 'from-cyan-400 via-cyan-600 to-sky-300' : 'from-cyan-600 via-cyan-600 to-sky-500'} bg-gradient-to-r bg-clip-text text-transparent`}>
+                <span className={`hey_there_welcome_section text-6xl p-4 text-center font-bold ${theme === 'dark' ? 'from-cyan-400 via-cyan-600 to-sky-300' : 'from-cyan-600 via-cyan-700 to-sky-600'} bg-gradient-to-r bg-clip-text text-transparent`}>
                 Hey there, I'm
                 <br />
-                <span className={`name_welcome_section text-6xl p-4 text-center font-bold  ${theme === 'dark' ? 'from-cyan-400 via-cyan-600 to-sky-200' : 'from-cyan-600 via-cyan-600 to-sky-500'} bg-gradient-to-r bg-clip-text text-transparent`}>
+                <span className={`name_welcome_section text-6xl p-4 text-center font-bold  ${theme === 'dark' ? 'from-cyan-400 via-cyan-600 to-sky-200' : 'from-cyan-600 via-cyan-700 to-sky-600'} bg-gradient-to-r bg-clip-text text-transparent`}>
                 David Torres!
                 <span className='icon_robot'> 🤖 </span>
                 </span> 

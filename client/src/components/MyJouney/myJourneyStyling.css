@@ -1,14 +1,30 @@
+@import url('../../appStyling.css');
+
 .main_wrapper_journey {
-    background-color: #222831;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+.main_wrapper_journey_dark {
+    background-color: var(--dark-mode-color);
+}
+
+.main_wrapper_journey_light {
+    background-color: var(--light-mode-color);
+}
+
 .my_journey_main_section {
-    background-color: #222831;
     flex: 1; /* or height: 100%; */
     overflow-y: auto;
+}
+
+.my_journey_main_section_dark {
+    background-color: var(--dark-mode-color);
+}
+
+.my_journey_main_section_light {
+    background-color: var(--light-mode-color);
 }
 
 .big_letter_section {
@@ -29,7 +45,7 @@
 }
 
 @media (max-width: 800px) {
-    .first_about_me_projects_p {
+    .first_about_me_my_journey_p {
         width: 80%;
         padding-bottom: 2rem;
     }

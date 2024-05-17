@@ -64,13 +64,20 @@ function Header({ theme, toggleTheme}) {
                   <span className="block h-0.5 w-8 animate-pulse bg-cyan-400"></span>
                 </div>
 
-                <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+                <div className={`${isNavOpen
+                  ? theme === 'dark'
+                    ? "showMenuNav showMenuNav_dark_theme"
+                    : theme === 'light'
+                    ? "showMenuNav showMenuNav_light_theme"
+                    : null
+                  : "hideMenuNav"}`}
+                >
                   <div
                     className="absolute top-0 right-0 px-8 py-8"
                     onClick={() => setIsNavOpen(false)}
                   >
                     <svg
-                      className="h-8 w-8 text-gray-600"
+                      className={`h-8 w-8 ${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`}
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -83,14 +90,14 @@ function Header({ theme, toggleTheme}) {
                     </svg>
                   </div>
                   <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                    <li className="border-b border-gray-400 my-8 uppercase">
-                      <a href="aboutme">About me</a>
+                    <li className={`border-b ${theme === 'dark' ? 'border-gray-400' : 'border-blue-400'} my-8 uppercase`}>
+                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`}href="aboutme">About me</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
-                      <a href="projects">Projects</a>
+                    <li className={`border-b ${theme === 'dark' ? 'border-gray-400' : 'border-blue-400'} my-8 uppercase`}>
+                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`} href="projects">Projects</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
-                      <a href="other">Other</a>
+                    <li className={`border-b ${theme === 'dark' ? 'border-gray-400' : 'border-blue-400'} my-8 uppercase`}>
+                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`} href="other">Other</a>
                     </li>
                   </ul>
                 </div>
