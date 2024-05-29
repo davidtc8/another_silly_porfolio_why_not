@@ -1,3 +1,5 @@
+@import url('../../appStyling.css');
+
 .main_wrapper_projects {
     display: flex;
     flex-direction: column;
@@ -11,8 +13,15 @@
     overflow-y: auto; 
 }
 
+.projects_main_section_dark {
+    background-color: var(--dark-mode-color);
+}
+
+.projects_main_section_light {
+    background-color: var(--light-mode-color);
+}
+
 .letters_projects {
-    width: 50%; 
     margin: auto auto auto auto;
     color: #EEEEEE;
     padding-top: 5rem;
@@ -70,8 +79,12 @@
     text-align: center;
 }
 
-.title_description {
+.title_description_dark {
     color: white;
+}
+
+.title_description_light {
+    color: #6C7A89;
 }
 
 .grid_item .col1Projects {
@@ -141,7 +154,8 @@
         width: auto\9; /* ie8 */
     }
 
-    .project_description_section {
-        text-align: -webkit-center;
+    .first_about_me_projects_p {
+        width: 100%;
     }
+
 }

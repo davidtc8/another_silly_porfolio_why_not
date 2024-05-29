@@ -3,17 +3,18 @@ import Heroes from '../../assets/heroes-react.jpeg'
 import F1 from '../../assets/f1.jpeg'
 import JSQuiz from '../../assets/js-quiz.jpeg'
 import RPGGame from '../../assets/rpg-games.jpeg'
+import { connect } from 'react-redux';
 
-export default function Projects() {
+function Projects({ theme }) {
     return (
         <div className="main_wrapper_projects">
-            <div className="projects_main_section">
+            <div className={`projects_main_section ${theme === 'dark' ? 'projects_main_section_dark' : 'projects_main_section_light'}`}>
                 <div className="letters_projects">
-                    <span className='about_me_bigletters_section text-6xl p-4 text-center font-bold from-cyan-400 via-cyan-600 to-sky-200 bg-gradient-to-r bg-clip-text text-transparent'>
+                    <span className={`about_me_bigletters_section text-6xl p-4 text-center font-bold ${theme === 'dark' ? 'from-cyan-400 via-cyan-600 to-sky-300' : 'from-cyan-600 via-cyan-700 to-sky-600'} bg-gradient-to-r bg-clip-text text-transparent`}>
                         Projects
                     </span>
                 </div>
-                <span className='project_description_section text-gray-400 text-xl font-normal'>
+                <span className={`project_description_section ${theme === 'dark' ? 'text-gray-400' : 'text-slate-400'} text-lg font-normal`}>
                     <p className='first_about_me_projects_p'>
                         Feel free to take a look around to what I've built.
                     </p>
@@ -33,7 +34,7 @@ export default function Projects() {
                                     Heroes
                                 </div>
                                 <br />
-                                <span className='title_description'>
+                                <span className={theme === 'dark' ? 'title_description_dark' : 'title_description_light'}>
                                     Website where you can take a look at different heroes of Marvel and DC.
                                 </span>
                                 <ul className="mt-2 flex flex-wrap place-content-center" aria-label="Technologies used">
@@ -72,7 +73,7 @@ export default function Projects() {
                                         Formula 1
                                     </div>
                                     <br />
-                                    <span className='title_description'>
+                                    <span className={theme === 'dark' ? 'title_description_dark' : 'title_description_light'}>
                                         Website where you can take a look at different heroes of Marvel and DC.
                                     </span>
                                     <ul className="mt-2 flex flex-wrap place-content-center" aria-label="Technologies used">
@@ -120,7 +121,7 @@ export default function Projects() {
                                     Quiz JS
                                 </div>
                                 <br />
-                                <span className='title_description'>
+                                <span className={theme === 'dark' ? 'title_description_dark' : 'title_description_light'}>
                                     Simple Quiz to enhance your programming knowledge.
                                 </span>
                                 <ul className="mt-2 flex flex-wrap place-content-center" aria-label="Technologies used">
@@ -154,7 +155,7 @@ export default function Projects() {
                                         RPG Text Based Game
                                     </div>
                                     <br />
-                                    <span className='title_description'>
+                                    <span className={theme === 'dark' ? 'title_description_dark' : 'title_description_light'}>
                                         Game built in Python
                                     </span>
                                     <ul className="mt-2 flex flex-wrap place-content-center" aria-label="Technologies used">
@@ -195,3 +196,9 @@ export default function Projects() {
         </div>
     )
 }
+
+const mapStateToProps = (state) => ({
+    theme: state.theme.theme // Accessing the theme state from Redux store
+  });
+  
+export default connect(mapStateToProps)(Projects); // Connect component to Redux store

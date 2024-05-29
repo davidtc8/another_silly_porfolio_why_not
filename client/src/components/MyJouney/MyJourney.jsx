@@ -4,19 +4,21 @@ import MeProgramming from '../../assets/me_programming.jpeg'
 import PadelCourt from '../../assets/padel_court.jpeg'
 import MePadel from '../../assets/padel.jpeg'
 import Book1984 from '../../assets/1984.jpeg'
+import { connect } from 'react-redux';
 import './myJourneyStyling.css'
 
-export default function MyJourney() {
+function MyJourney({ theme }) {
+
     return (
-        <div className="main_wrapper_journey">
-            <div className='my_journey_main_section'>
+        <div className={`main_wrapper_journey ${theme === 'dark' ? 'main_wrapper_journey_dark': 'main_wrapper_journey_light'}`}>
+            <div className={`my_journey_main_section ${theme === 'dark' ? 'my_journey_main_section_dark': 'my_journey_main_section_light'}`}>
                 <div className='big_letter_section'>
-                    <span className='text-6xl p-4 text-center font-bold from-cyan-400 via-cyan-600 to-sky-200 bg-gradient-to-r bg-clip-text text-transparent'>
+                    <span className={`text-6xl p-4 text-center font-bold ${theme === 'dark' ? 'from-cyan-400 via-cyan-600 to-sky-300' : 'from-cyan-600 via-cyan-700 to-sky-600'} bg-gradient-to-r bg-clip-text text-transparent`}>
                         My Journey
                     </span>
                 </div>
-                <span className='project_description_section text-gray-400 text-lg font-normal'>
-                    <p className='first_about_me_my_journey_p'>
+                <span className={`project_description_section ${theme === 'dark' ? 'text-gray-400' : 'text-slate-500'} text-lg font-normal`}>
+                    <div className='first_about_me_my_journey_p'>
                     Embarking on my coding journey four years ago, I've delved into the intricate world of <PopupImage imageUrl={MeProgramming}>programming</PopupImage>, with a primary focus on JavaScript, 
                     HTML, CSS, and Python. Through countless hours of <PopupImage imageUrl={SimplyMe}>learning</PopupImage>, experimentation, and project development, I've cultivated a strong 
                     foundation in these languages, enabling me to tackle a variety of web development challenges with confidence and creativity.
@@ -40,9 +42,15 @@ export default function MyJourney() {
                     <br />
                     Through coding, padel, literature, and my commitment to health advocacy, I strive to cultivate a rich and meaningful life, 
                     driven by curiosity, passion, and a desire to make a positive impact in both the digital and physical realms. 
-                    </p>
+                    </div>
                 </span>
             </div>
         </div>
     )
 }
+
+const mapStateToProps = (state) => ({
+    theme: state.theme.theme // Accessing the theme state from Redux store
+  });
+  
+export default connect(mapStateToProps)(MyJourney); // Connect component to Redux store
