@@ -1,3 +1,5 @@
+@import url('../../appStyling.css');
+
 .main_wrapper {
     display: flex;
     flex-direction: column;
@@ -5,17 +7,31 @@
 }
 
 .aboutme_main_section {
-    background-color: #222831;
     flex: 1; /* or height: 100%; */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+}
+
+.aboutme_main_section_dark {
+    background-color: var(--dark-mode-color);
+}
+
+.aboutme_main_section_light {
+    background-color: var(--light-mode-color);
 }
 
 .letter_section_box {
     width: 50%; 
     margin: auto auto auto auto;
-    color: #EEEEEE;
     padding-top: 5rem;
     text-align: center;
+}
+
+.letter_section_box_dark {
+    color: #EEEEEE;
+}
+
+.letter_section_box_light {
+    color: #6C7A89;
 }
 
 .full_summary_box {
@@ -34,7 +50,14 @@
 
 .my_text {
     list-style-type:none;
-    color: white;
+}
+
+.my_text_dark {
+    color: grey;
+}
+
+.my_text_light {
+    color: #6C7A89;
 }
 
 .my_a {
@@ -44,13 +67,27 @@
 
 .my_next_li {
     padding-top: .5rem;
-    color: white;
+}
+
+.my_next_li_dark {
+    color: grey;
+}
+
+.my_next_li_light {
+    color: #6C7A89;
 }
 
 .my_text2 {
-    color: white;
     padding-top: 1rem;
     list-style-type:none;
+}
+
+.my_text2_dark {
+    color: grey;
+}
+
+.my_text2_light {
+    color: #6C7A89;
 }
 
 .grid_section {
@@ -81,6 +118,7 @@
     justify-content: center;
     padding-top: 2rem;
     border: 2px solid transparent;
+    border-radius: 10px;
     transition: 0.5s ease;
     transform: scale(1);
     margin-bottom: 1rem;

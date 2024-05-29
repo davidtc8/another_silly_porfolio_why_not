@@ -91,10 +91,10 @@ function Header({ theme, toggleTheme}) {
                   </div>
                   <ul className="flex flex-col items-center justify-between min-h-[250px]">
                     <li className={`border-b ${theme === 'dark' ? 'border-gray-400' : 'border-blue-400'} my-8 uppercase`}>
-                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`}href="aboutme">About me</a>
+                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`}href="projects">Projects</a>
                     </li>
                     <li className={`border-b ${theme === 'dark' ? 'border-gray-400' : 'border-blue-400'} my-8 uppercase`}>
-                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`} href="projects">Projects</a>
+                      <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`} href="aboutme">About me</a>
                     </li>
                     <li className={`border-b ${theme === 'dark' ? 'border-gray-400' : 'border-blue-400'} my-8 uppercase`}>
                       <a className={`${theme === 'dark' ? 'text-gray-600' : 'text-cyan-600'}`} href="other">Other</a>

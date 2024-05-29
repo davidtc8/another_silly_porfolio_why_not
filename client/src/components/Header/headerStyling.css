@@ -84,6 +84,7 @@
 
 /* Night mode icon styling */
 .night_mode_div {
+    cursor: pointer;
     top: 8px;
     display: flex;
     margin-right: -45rem;
